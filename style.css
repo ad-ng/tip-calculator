@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    font-family: "spacemono";
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Spacemono";
+    src: url(/design/font/SpaceMono-Regular.ttf);
+}
+body{
+    background-color: hsl(185, 41%, 84%);
+}
+#splitter{
+    top: 60px;
+    right: 47%;
+    position: absolute;
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+.container{
+    display: flex;
+    margin: 150px 250px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 28px;
+    border-radius: 15px;
+}
+.cols1{
+    padding-right: 20px;
+    width: 50%;
+}
+#dollar{
+    position: absolute;
+    margin: 5px;
+}
+input[type=text]{
+    width: 100%;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    height: 35px;
+    margin-bottom: 40px;
+    text-align: right;
+    padding-right: 10px;
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+    font-size: 20px;
+}
+button{
+    width: 30%;
+    margin: 8px 2px;
+    height: 40px;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: hsl(185, 41%, 84%);
+    color: black;
+}
+#custom{
+    width: 30%;
+    height: 40px;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#person{
+    position: absolute;
+    margin: 10px 5px;
+}
+input:last-of-type{
+    width: 100%;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    height: 30px;
+    margin: 5px 0 15px;
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 20px;
+}
+.cols1 p{
+    color: hsl(186, 14%, 43%);
+}
+.cols2{
+    background-color: hsl(183, 100%, 15%);
+    padding: 20px;
+    border-radius: 15px;
+    width: 50%;
+    overflow: hidden;
+}
+.cols2 p{
+    color: white;
+}
+.tamount{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.tamount p:nth-of-type(2){
+    color: hsl(172, 67%, 45%);
+    font-size: 45px;
+    font-weight: 600;
+    display: flex;
+}
+.tamount span:nth-of-type(2){
+    font-size: 30px;
+    margin-top: 8px;
+    margin-right: 20px;
+}
+#spana{
+    color: hsl(184, 14%, 56%);
+}
+.cols2 button{
+    background-color: hsl(172, 67%, 45%);
+    width: 26%;
+    bottom: 220px;
+    right: 302px;
+    position: absolute;
+    font-weight: 600;
+    font-size: 16px;
+}
+@media only screen and (max-width : 600px){
+    .container{
+        margin: 150px 0 0;
+        flex-direction: column;
+    }
+    .cols1, .cols2{
+        width: 100%;
+    }
+    .cols2 button{
+        position: inherit;
+        width: 100%;
+    }
+}
+@media only screen and (max-width : 375px){
+    button{
+        width: 40%;
+        margin:10px 10px;
+    }
+    #custom{
+        width: 40%;
+        margin:10px 10px;
+    }
+}

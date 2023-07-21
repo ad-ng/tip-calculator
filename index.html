@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p id="splitter">SPLI <br>TTER</p>
+    <div class="container">
+        <div class="cols1">
+            <p>Bill</p>
+            <img src="/design/images/icon-dollar.svg" id="dollar">
+        
+                <input type="text" name="" id="myinput">
+            <p>Select Tip %</p>
+            <button id="five">5%</button>
+            <button id="ten">10%</button>
+            <button id="fifteen">15%</button>
+            <button id="twentyfive">25%</button>
+            <button id="fifty">50%</button>
+            <input type="text" name="custom" id="custom" placeholder="custom">
+            <p>Number of People</p>
+            <img src="/design/images/icon-person.svg" id="person">
+            <input type="number" name="people" id="people">
+        
+        </div>
+        <div class="cols2">
+            <div class="row">
+                <div class="tamount">
+                    <p>Tip amount <br><span id="spana">/person</span></p>
+                    <p>$<span id="output">4.27</span></p>
+                </div>
+                <div class="tamount">
+                    <p>Total <br><span id="spana">/person</span></p>
+                    <p>$ <span id="per">32.79</span></p>
+                </div>
+            </div>
+            <button id="reseter">reset</button>
+        </div>
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
